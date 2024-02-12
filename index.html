@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
+    <style>
+        /* CSS for responsiveness */
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Our Project</h1>
-    <p>Short introduction to the project...</p>
+    <header>
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <h1>Welcome to Our Project</h1>
+        <p>Short introduction to the project...</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about our project...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Contact information...</p>
+    </section>
+
     <h2>Meet Our Team</h2>
     <img src="images/member1.jpeg" alt="Team Member 1">
     <img src="images/member2.jpeg" alt="Team Member 2">
     <img src="images/member3.jpeg" alt="Team Member 3">
     <img src="images/member4.jpeg" alt="Team Member 4">
 
-    <h2>Contact</h2>
     <h2>Project Proposal</h2>
     <p>Find our project proposal <a href="Docs/Project_Proposal.pdf">here</a>.</p>
 </body>
