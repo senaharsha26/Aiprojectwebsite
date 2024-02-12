@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <style>
-        /* CSS for responsiveness */
+        
+       body {
+            background-image: url('images/backimage.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .container {
+            max-width: 960px; 
+            margin: 0 auto; 
+            padding: 20px;
+            color: #333; 
+        }
         .navigation {
             text-align: center;
             margin-bottom: 20px;
@@ -14,7 +28,10 @@
             display: inline-block;
             margin: 0 10px;
             text-decoration: none;
-            color: #333;
+            color: #fff; /
+        }
+        .navigation a:hover {
+            color: #ddd; 
         }
     </style>
 </head>
