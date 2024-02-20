@@ -6,93 +6,84 @@
     <title>My Project</title>
     <style>
         body {
-            background: url('images/fb.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white; /* Set default font color to white */
-            font-family: 'Arial', sans-serif; /* Changed font to Arial for better readability */
-            list-style: none;
-            text-decoration: none;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
-        header {
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            padding: 15px 0;
-            background: rgba(0, 0, 0, 0.5); /* Added a semi-transparent background for better contrast */
+        /* Parallax scrolling effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center; /* Center align navigation */
-            transition: all 0.3s ease; /* Smooth transition */
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        .parallax:nth-child(even) {
+            background-color: #222;
+        }
+        .parallax:nth-child(odd) {
+            background-color: #444;
         }
         .logo { 
-            text-align: center; /* Center align logo */
+            text-align: center;
             font-size: 30px;
             font-weight: 700;
-            color: white; /* Logo font color is white */
+            color: white;
             text-decoration: none;
         }
         .navigation {
             display: flex;
             align-items: center;
-            justify-content: center; /* Center align navigation */
-            flex-grow: 1; /* Allow navigation to grow and take up remaining space */
-            padding-right: 20px; /* Add padding to separate navigation from logo */
+            justify-content: center;
         }
         .navigation a {
-            color: white; /* Navigation font color is white */
-            margin-left: 20px; /* Increased spacing between navigation links */
-            font-size: 20px; /* Increased font size for better visibility */
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
             font-weight: 600;
             text-decoration: none;
         }
-        .navigation a:hover {
-            border-bottom: 2px solid white; 
-        }
-        .container {
-            text-align: center; /* Center align all content */
-            margin-top: 100px; /* Increased margin to accommodate the fixed header */
-            padding-top: 20px; /* Add padding to separate content from header */
-            transition: all 0.3s ease; /* Smooth transition */
-        }
         h1 {
-            color: #D4AC0D; /* H1 font color is gold */
-            font-size: 48px; /* Increased font size for better visibility */
-            transition: all 0.3s ease; /* Smooth transition */
+            font-size: 48px;
+            color: gold;
         }
         .content {
-            color: black; /* Set default font color to white */
-            margin-top: 20px;
-            font-size: 24px; /* Increased font size for better visibility */
+            padding: 20px;
+            text-align: center;
+            color: black; /* Change content font color to black */
         }
         img {
-            max-width: 100%; /* Make images responsive */
+            max-width: 100%;
             height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">AI PROJECT</div>
+        <a href="#" class="logo">AI PROJECT</a>
         <div class="navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a href="#checkpoints">Checkpoints</a> <!-- Changed to Checkpoints -->
+            <a href="#checkpoints">Checkpoints</a>
         </div>
     </header>
 
-    <div class="container">
-        <h1>Welcome to Our Project</h1>
-
-        <section id="home" class="content">
+    <div class="parallax" style="background-image: url('images/fb.jpg');">
+        <div class="content">
+            <h1>Welcome to Our Project</h1>
             <p>Short introduction to the project...</p>
-        </section>
+        </div>
+    </div>
 
-        <section id="about" class="content">
+    <div class="parallax">
+        <div class="content">
             <h2>About Us</h2>
             <p>Information about our project...</p>
             <h3>Contact Us</h3>
@@ -106,18 +97,17 @@
                 <img src="images/member3.jpeg" alt="Team Member 3">
                 <p>Michael Johnson - Position: Project Manager</p>
             </div>
-        </section>
-
-        <section id="contact" class="content">
-            <h2>Contact Us</h2>
-            <p>Contact information...</p>
-        </section>
-
-        <section id="checkpoints" class="content"> <!-- Changed to Checkpoints -->
-            <h2>Checkpoints</h2>
-            <p>Find our checkpoints <a href="Docs/Checkpoints.pdf">here</a>.</p> <!-- Updated link -->
-        </section>
+        </div>
     </div>
+
+    <div class="parallax" style="background-color: #666;">
+        <div class="content">
+            <h2>Checkpoints</h2>
+            <p>Find our checkpoints <a href="Docs/Checkpoints.pdf">here</a>.</p>
+        </div>
+    </div>
+
+    <!-- Add more sections as needed -->
 
     <script>
         // Smooth scrolling for navigation links
