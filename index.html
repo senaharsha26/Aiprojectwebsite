@@ -25,8 +25,7 @@
             background: transparent;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 33px 9%;
+            justify-content: center; /* Center align navigation */
         }
         .logo { 
             text-align: right;
@@ -39,13 +38,13 @@
         .navigation {
             display: flex;
             align-items: right;
-            justify-content: flex-left; /* Align navigation to the right */
+            justify-content: center; /* Center align navigation */
             flex-grow: 1; /* Allow navigation to grow and take up remaining space */
         }
         .navigation a {
             color: green; /* Navigation font color is red */
-            margin-left: 220px; /* Reduced spacing between navigation links */
-            font-size: 15p;
+            margin-left: 10px; /* Reduced spacing between navigation links */
+            font-size: 15px; /* Fixed typo */
             font-weight: 600;
             border-bottom: 2px solid transparent;
             transition: all .55s ease;
@@ -64,6 +63,10 @@
             margin-left: 20px;
             color: black; /* Set default font color to red */
         }
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -73,10 +76,10 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <a href="#proposal">Checkpoints</a> <!-- Added Project Proposal link -->
         </div>
     </header>
 
-    <!-- Moved h1 outside the header -->
     <h1>Welcome to Our Project</h1>
 
     <section id="home" class="content">
@@ -86,6 +89,17 @@
     <section id="about" class="content">
         <h2>About Us</h2>
         <p>Information about our project...</p>
+        <h3>Contact Us</h3>
+        <p>Contact information...</p>
+        <h3>Our Team</h3>
+        <div class="team-members">
+            <img src="images/member1.jpeg" alt="Team Member 1">
+            <p>John Doe - Position: Developer</p>
+            <img src="images/member2.jpeg" alt="Team Member 2">
+            <p>Jane Smith - Position: Designer</p>
+            <img src="images/member3.jpeg" alt="Team Member 3">
+            <p>Michael Johnson - Position: Project Manager</p>
+        </div>
     </section>
 
     <section id="contact" class="content">
@@ -93,15 +107,10 @@
         <p>Contact information...</p>
     </section>
 
-    <h2 class="content">Meet Our Team</h2>
-    <div class="content">
-        <img src="images/member1.jpeg" alt="Team Member 1">
-        <img src="images/member2.jpeg" alt="Team Member 2">
-        <img src="images/member3.jpeg" alt="Team Member 3">
-        <img src="images/member4.jpeg" alt="Team Member 4">
-    </div>
+    <section id="proposal" class="content"> <!-- Added Project Proposal section -->
+        <h2>Project Proposal</h2>
+        <p>Find our project proposal <a href="Docs/Project_Proposal.pdf">here</a>.</p>
+    </section>
 
-    <h2 class="content">Project Proposal</h2>
-    <p class="content">Find our project proposal <a href="Docs/Project_Proposal.pdf">here</a>.</p>
 </body>
 </html>
