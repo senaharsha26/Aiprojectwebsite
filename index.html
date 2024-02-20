@@ -48,6 +48,18 @@
             font-size: 20px;
             font-weight: 600;
             text-decoration: none;
+            position: relative;
+        }
+        .navigation a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #E76F51; /* Change active link indicator color */
+            transition: width 0.3s;
+        }
+        .navigation a:hover::after {
+            width: 100%;
         }
         h1 {
             font-size: 48px;
@@ -75,14 +87,14 @@
         </div>
     </header>
 
-    <div class="parallax" style="background-image: url('images/fb.jpg');">
+    <div id="home" class="parallax" style="background-image: url('images/fb.jpg');">
         <div class="content">
             <h1>Welcome to Our Project</h1>
             <p>Short introduction to the project...</p>
         </div>
     </div>
 
-    <div class="parallax">
+    <div id="about" class="parallax">
         <div class="content">
             <h2>About Us</h2>
             <p>Information about our project...</p>
@@ -100,7 +112,14 @@
         </div>
     </div>
 
-    <div class="parallax" style="background-color: #F4A261;">
+    <div id="contact" class="parallax" style="background-color: #F4A261;">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Contact information...</p>
+        </div>
+    </div>
+
+    <div id="checkpoints" class="parallax" style="background-color: #2A9D8F;">
         <div class="content">
             <h2>Checkpoints</h2>
             <p>Find our checkpoints <a href="Docs/Checkpoints.pdf">here</a>.</p>
