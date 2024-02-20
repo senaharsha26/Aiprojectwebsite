@@ -11,9 +11,9 @@
             padding: 0;
             overflow-x: hidden;
         }
-        /* Parallax scrolling effect */
+        
         .parallax {
-            background-attachment: fixed;
+            background-attachment: scorll;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -21,20 +21,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: black; /* Change content font color to black */
+            color: black; 
             font-size: 24px;
         }
         .parallax:nth-child(even) {
-            background-color: #F4A261; /* Change background color for even sections */
+            background-color: #F4A261; 
         }
         .parallax:nth-child(odd) {
-            background-color: #2A9D8F; /* Change background color for odd sections */
+            background-color: #2A9D8F; 
         }
         .logo { 
             text-align: center;
             font-size: 30px;
             font-weight: 700;
-            color: #E76F51; /* Change logo color to a vibrant color */
+            color: #E76F51; 
             text-decoration: none;
         }
         .navigation {
@@ -43,7 +43,7 @@
             justify-content: center;
         }
         .navigation a {
-            color: #E76F51; /* Change navigation link color to a vibrant color */
+            color: #E76F51; 
             margin-left: 20px;
             font-size: 20px;
             font-weight: 600;
@@ -55,7 +55,7 @@
             display: block;
             width: 0;
             height: 2px;
-            background: #E76F51; /* Change active link indicator color */
+            background: #E76F51; 
             transition: width 0.3s;
         }
         .navigation a:hover::after {
@@ -64,22 +64,32 @@
         h1 {
             font-size: 48px;
             color: gold;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-            padding: 20px; /* Add padding for space around the text */
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px; 
         }
         .content {
             padding: 20px;
             text-align: center;
-            color: black; /* Change content font color to black */
+            color: black; 
         }
         img {
             max-width: 90%;
             height: auto;
         }
         #contact {
-            background-size: cover; /* Ensure the background image covers the entire section */
-            background-position: center; /* Center the background image */
-            color: white; /* Change content font color to white for better visibility on the image */
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+        }
+        #about {
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+        }
+        #checkpoints {
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
         }
     </style>
 </head>
@@ -101,7 +111,7 @@
         </div>
     </div>
 
-    <div id="about" class="parallax">
+    <div id="about" class="parallax" style="background-image: url('images/about.jpg');">
         <div class="content">
             <h2>About Us</h2>
             <h3>Our Team</h3>
@@ -134,20 +144,20 @@
         </div>
     </div>
 
-    <div id="checkpoints" class="parallax" style="background-color: #D0D3D4;">
+    <div id="checkpoints" class="parallax" style="background-image: url('images/checkpoint.jpg');" color: White;>
         <div class="content">
             <h2>Checkpoints</h2>
             <p>Project Proposal <a href="Docs/Project_Proposal.pdf">here</a>.</p>
             <p>Project Checkpoint 1..... Will be available on 03/26/2024</p>
             <p>Project Checkpoint 2..... Will be available on 04/16/2024</p>
-            <p>Final Project Report .... Will be available on 05/07/2024</p>
+            <p>Final Project Report..... Will be available on 05/07/2024</p>
         </div>
     </div>
 
-    <!-- Add more sections as needed -->
+    
 
     <script>
-        // Smooth scrolling for navigation links
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
