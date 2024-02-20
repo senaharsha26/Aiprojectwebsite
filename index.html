@@ -7,30 +7,32 @@
     <style>
 
         body {
-
             background: black;
             color: red;
-            font-family: 'calibr', sans-serif;
+            font-family: 'calibri';
             list-style: none;
             text-decoration: none;
-            
+            margin: 0; 
+            padding: 0; 
         }
         header {
             position: fixed;
-            right: 0;
+            left: 0; 
             top: 0;
             z-index: 1000;
-            width: 1000;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 33px 9%;
             background: transparent;
-            
+        }
         .logo { 
+            text-align: left;
             font-size: 30px;
             font-weight: 700;
             color: white;
+            text-decoration: none;
         }
             
         .navigation {
@@ -46,31 +48,43 @@
             font-size: 15px;
             font-weight: 600;
             border-bottom: 2px solid transparent;
-            transistion: all .55s ease;
+            transition: all .55s ease; /* Corrected spelling of 'transition' */
+            text-decoration: none;
         }
         .navigation a:hover {
             border-bottom: 2px solid white; 
+        }
+
+        /* Added style for h1 */
+        h1 {
+            margin-top: 80px; /* Adjust this value as needed */
+            text-align: center; /* Align the heading in the center */
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">AIPROJECT</a>
+        <a href="#" class="logo">AI PROJECT</a>
+        
         <div class="navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
-        <h1>Welcome to Our Project</h1>
-        <p>Short introduction to the project...</p>
     </header>
+
+    <!-- Moved h1 outside the header -->
+    <h1>Welcome to Our Project</h1>
+
+    <section id="home">
+        <p>Short introduction to the project...</p>
+    </section>
 
     <section id="about">
         <h2>About Us</h2>
         <p>Information about our project...</p>
     </section>
 
-    
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Contact information...</p>
