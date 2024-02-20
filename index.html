@@ -8,7 +8,7 @@
         body {
             background: url('images/back.ai') no-repeat center center fixed;
             background-size: cover;
-            color: red;
+            color: black;
             font-family: 'calibri';
             list-style: none;
             text-decoration: none;
@@ -39,7 +39,8 @@
         .navigation {
             display: flex;
             align-items: center;
-            margin-right: 20px;
+            justify-content: flex-end; /* Align the navigation links to the right */
+            flex-grow: 1; /* Allow navigation to grow and take up remaining space */
         }
         .navigation a {
             color: white;
@@ -59,9 +60,9 @@
             color: white;
         }
         .content {
-            margin-top: 20px; /* Adjust as needed */
-            margin-left: 20px; /* Align content to the left */
-            color: red;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: black;
         }
     </style>
 </head>
