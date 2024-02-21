@@ -101,6 +101,10 @@
             margin-top: 20px; /* Adjust this value as needed */
         }
 
+        .member {
+            display: block;
+        }
+
         .team-members img {
             margin: 0 10px; /* Add some space between the images */
             max-width: 100px; /* Set the maximum width of the images */
@@ -131,12 +135,18 @@
             <h2>About Us</h2>
             <h3>Our Team</h3>
             <div class="team-members">
-                <img src="images/member1.jpeg" alt="Team Member 1">
-                <p>Krishna Teja Elineni - Position: Leader,Developer</p>
-                <img src="images/member2.jpeg" alt="Team Member 2">
-                <p>Harsha Vardhini Daram - Position: Project Manager</p>
-                <img src="images/member3.jpeg" alt="Team Member 3">
-                <p>Kumar Datta Tummala - Position: Designer</p>
+                <div class="member">
+                    <img src="images/member1.jpeg" alt="Team Member 1">
+                    <p>Krishna Teja Elineni - Position: Leader,Developer</p>
+                </div>
+                <div class="member">
+                    <img src="images/member2.jpeg" alt="Team Member 2">
+                    <p>Harsha Vardhini Daram - Position: Project Manager</p>
+                </div>
+                <div class="member">
+                    <img src="images/member3.jpeg" alt="Team Member 3">
+                    <p>Kumar Datta Tummala - Position: Designer</p>
+                </div>
             </div>
         </div>
     </div>
@@ -144,18 +154,24 @@
     <div id="contact" class="parallax" style="background-image: url('images/c.jpg');">
         <div class="content">
             <h2>Contact Us</h2>
+            <div>
             <p>Team Leader</p>
             <p>Krishna Teja Elineni</p>
             <p>Email: <a href="mailto:kelineni@islander.tamucc.edu">kelineni@islander.tamucc.edu</a></p>
             <p>Phone: <a href="tel:+13617375093">+1 (361) 737-5053</a></p>
+            </div>
+            <div>
             <p>Team Member 1</p>
             <p>Harsha Vardhini Daram</p>
             <p>Email: <a href="mailto:hdaram@islander.tamucc.edu">hdaram@islander.tamucc.edu</a></p>
             <p>Phone: <a href="tel:+13617429249">+1 (361) 742-9249</a></p>
+            </div>
+            <div>
             <p>Team Member 2</p>
             <p>Kumar Datta Tummala</p>
             <p>Email: <a href="mailto:ktummala@islander.tamucc.edu">ktummala@islander.tamucc.edu</a></p>
             <p>Phone: <a href="tel:+12792346618">+1 (279) 234-6618</a></p>
+            </div>
         </div>
     </div>
 
